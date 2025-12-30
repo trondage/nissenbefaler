@@ -23,6 +23,8 @@ Nissen Befaler Poengtavle er en Windows-applikasjon designet spesielt for å hol
 
 ### 🖼️ Skjermbilder
 
+![Nissen Befaler Poengtavle](screenshots/Skjermbilde-2025.png)
+
 Appen viser en oversiktlig poengtavle med:
 - Deltakerkort med emoji, navn og poengsum
 - Interaktive knapper for poengoppdatering
@@ -33,17 +35,18 @@ Appen viser en oversiktlig poengtavle med:
 
 ### Alternativ 1: Last ned ferdig Windows-applikasjon (anbefalt)
 
-1. Last ned `Nissen Befaler Poengtavle-Portable.exe` fra [Releases](../../releases)
-2. Dobbeltklikk på filen for å starte appen
-3. Ingen installasjon nødvendig - portable versjon!
+1. Gå til [Releases](../../releases)
+2. Last ned `Nissen Befaler Poengtavle-Portable.exe` fra nyeste release
+3. Dobbeltklikk på filen for å starte appen
+   - Ingen installasjon nødvendig - portable versjon!
 
-### Alternativ 2: Kjør fra kildekode
+### Alternativ 2: Bygg fra kildekode
 
 #### Forutsetninger
 - Node.js (v14 eller nyere)
 - npm
 
-#### Installasjon
+#### Installasjon og bygg
 
 1. Klon repositoriet:
 ```bash
@@ -56,23 +59,24 @@ cd nissen-befaler-poengtavle
 npm install
 ```
 
-3. Start appen i utviklingsmodus:
-```bash
-npm start
-```
-
-Appen åpnes i nettleseren på `http://localhost:3000`
-
-#### Bygg desktop-applikasjon
-
-For å bygge din egen Windows .exe-fil:
-
+3. Bygg portable Windows .exe:
 ```bash
 npm run build
 npx electron-builder --win portable
 ```
 
-Den ferdige portable .exe-filen ligger i `release/`-mappen.
+Den ferdige `Nissen Befaler Poengtavle-Portable.exe` ligger i `release/`-mappen.
+
+### Alternativ 3: Kjør i utviklingsmodus
+
+1. Følg steg 1-2 fra Alternativ 2 over
+
+2. Start appen i utviklingsmodus:
+```bash
+npm start
+```
+
+Appen åpnes i nettleseren på `http://localhost:3000`
 
 ## 📖 Bruksanvisning
 
